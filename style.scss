@@ -52,6 +52,14 @@ body {
     }
   }
 
+  .emote {
+    animation-name: wave-anim;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+    transform-origin: 70% 70%;
+    display: inline-block;
+  }
+
   .wave:hover {
     animation-name: wave-anim;
     animation-duration: 2.5s;
