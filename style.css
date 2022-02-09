@@ -128,7 +128,6 @@ body {
   grid-template-areas: "company date" "info info";
   list-style-type: none;
   grid-area: "company";
-  padding: 0px;
 }
 .exp li:first-child {
   grid-area: "company";
@@ -221,6 +220,18 @@ footer links {
     margin: 0;
   }
 
+  .skills .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .skills .skill-list {
+    padding: 0;
+  }
+
+  .exp .comp {
+    padding: 0px;
+  }
+
   footer {
     align-items: center;
     flex-direction: column;
@@ -228,12 +239,6 @@ footer links {
   }
   footer img {
     margin: 0 1rem;
-  }
-
-  .skills .content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: start;
   }
 }
 
