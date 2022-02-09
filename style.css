@@ -1,13 +1,19 @@
-body {
-  font-family: system-ui;
-  margin: 0;
-  display: grid;
-  justify-content: center;
+:root {
+  --primary-color: #fff;
+  --accent-color: rgb(138, 43, 226);
 }
 
 ::selection {
   background: #0a0a0a;
   color: #ffaa00;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: system-ui;
+  margin: 0;
+  display: grid;
+  justify-content: center;
 }
 
 .hero {
@@ -97,7 +103,7 @@ body {
 .sec .title {
   font-family: "Courier New", Courier, monospace;
   text-transform: lowercase;
-  color: blueviolet;
+  color: var(--accent-color);
   text-align: right;
 }
 
@@ -164,10 +170,11 @@ body {
   padding: 0px;
 }
 .projs li {
+  color: var(--accent-color);
   display: inline-block;
   font-family: monospace;
   font-size: 90%;
-  border: 0.5px solid black;
+  border: 0.5px solid var(--accent-color);
   padding: 0.2rem 0.5rem;
   margin-right: 0.25rem;
   border-radius: 3px;
